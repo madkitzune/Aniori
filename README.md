@@ -16,13 +16,13 @@ npm install
 npm run dev
 ```
 
-Открой [http://localhost:3000](http://localhost:3000).
+Открыть [http://localhost:3000](http://localhost:3000).
 
 ## Настройка Supabase
 
-1. Создай проект на [supabase.com](https://supabase.com)
-2. Скопируй `.env.local.example` в `.env.local`
-3. Заполни `NEXT_PUBLIC_SUPABASE_URL` и `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+1. Создать проект на [supabase.com](https://supabase.com)
+2. Скопировать `.env.local.example` в `.env.local`
+3. Заполнить `NEXT_PUBLIC_SUPABASE_URL` и `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 ## Структура
 
