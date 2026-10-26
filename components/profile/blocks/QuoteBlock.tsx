@@ -63,7 +63,7 @@ export default function QuoteBlock({ quote, author, onUpdate }: Props) {
         className="absolute top-2 left-4 font-serif select-none pointer-events-none"
         style={{ fontSize: 72, color: '#2a2a2a', lineHeight: 1 }}
       >
-        "
+        {'"'}
       </span>
 
       <button onClick={() => setEditing(true)}
