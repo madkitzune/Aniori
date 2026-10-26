@@ -1,7 +1,5 @@
 import { createBrowserClient } from '@supabase/ssr'
+import { guestClient, isSupabaseConfigured, supabaseAnonKey, supabaseUrl } from './guest'
 
 export const createClient = () =>
-  createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  )
+  isSupabaseConfigured ? createBrowserClient(supabaseUrl!, supabaseAnonKey!) : guestClient
