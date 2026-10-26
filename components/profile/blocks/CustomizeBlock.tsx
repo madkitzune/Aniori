@@ -17,7 +17,7 @@ export default function CustomizeBlock({ onOpen }: Props) {
       </div>
       <div className="text-center">
         <p className="text-white font-semibold text-sm">Кастомизация</p>
-        <p className="text-xs mt-0.5" style={{ color: '#555' }}>Баннер, цвета, "о себе"</p>
+        <p className="text-xs mt-0.5" style={{ color: '#555' }}>Баннер, цвета, &quot;о себе&quot;</p>
       </div>
     </button>
   )
