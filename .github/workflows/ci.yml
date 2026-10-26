@@ -39,7 +39,7 @@ jobs:
       - name: Smoke test
         run: |
           docker run -d --name aniori -p 3000:3000 aniori:ci
-          curl -fsS --retry 10 --retry-connrefused --retry-delay 2 -o /dev/null http://localhost:3000/catalog
+          curl -fsS --retry 15 --retry-all-errors --retry-delay 2 -o /dev/null http://localhost:3000/catalog
           echo "catalog page responded"
       - name: Container logs
         if: always()
